@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://resources/default_theme.tres" type="Theme" id=1]
+
+[node name="Instructions" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.521569 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 30.0
+margin_top = 30.0
+margin_right = -30.0
+margin_bottom = -30.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Header" type="Label" parent="VSplitContainer"]
+margin_right = 964.0
+margin_bottom = 29.0
+text = "INST_HEADER_TEXT"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Body" type="Label" parent="VSplitContainer"]
+margin_top = 228.0
+margin_right = 964.0
+margin_bottom = 353.0
+text = "Comida saudável - Aumenta saúde
+Comida podre - Diminui saúde
+Baiacu - Evite a todos custo
+Rikishi - Irá te empurrar"
+
+[node name="StartBtn" type="Button" parent="VSplitContainer"]
+margin_left = 415.0
+margin_top = 449.0
+margin_right = 565.0
+margin_bottom = 491.0
+text = "START_BTN"

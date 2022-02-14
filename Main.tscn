@@ -1,0 +1,125 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://user_interface/PauseMenu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://resources/default_theme.tres" type="Theme" id=4]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 64, -64, 0, 0, 0, 0, 960, -64 )
+}
+
+[sub_resource type="Curve2D" id=2]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 1088, 64, 0, 0, 0, 0, 1088, 528 )
+}
+
+[sub_resource type="Curve2D" id=3]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 960, 656, 0, 0, 0, 0, 64, 656 )
+}
+
+[sub_resource type="Curve2D" id=4]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -64, 528, 0, 0, 0, 0, -64, 64 )
+}
+
+[node name="Main" type="Node"]
+script = ExtResource( 1 )
+
+[node name="TopPath" type="Path2D" parent="."]
+position = Vector2( 16, 80 )
+curve = SubResource( 1 )
+
+[node name="PathFollow" type="PathFollow2D" parent="TopPath"]
+position = Vector2( 64, -64 )
+rotation = 1.94013e-06
+rotate = false
+
+[node name="RightPath" type="Path2D" parent="."]
+position = Vector2( -80, 0 )
+curve = SubResource( 2 )
+
+[node name="PathFollow" type="PathFollow2D" parent="RightPath"]
+position = Vector2( 1088, 64 )
+rotation = 1.5708
+rotate = false
+
+[node name="BottomPath" type="Path2D" parent="."]
+position = Vector2( 0, -80 )
+curve = SubResource( 3 )
+
+[node name="PathFollow" type="PathFollow2D" parent="BottomPath"]
+position = Vector2( 960, 656 )
+rotation = -3.14158
+rotate = false
+
+[node name="LeftPath" type="Path2D" parent="."]
+position = Vector2( 80, 0 )
+curve = SubResource( 4 )
+
+[node name="PathFollow" type="PathFollow2D" parent="LeftPath"]
+position = Vector2( -64, 528 )
+rotation = -1.5708
+rotate = false
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="PauseMenu" parent="." instance=ExtResource( 2 )]
+
+[node name="Instructions" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Instructions"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.521569 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VSplitContainer" type="VSplitContainer" parent="Instructions"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 30.0
+margin_top = 30.0
+margin_right = -30.0
+margin_bottom = -30.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Header" type="Label" parent="Instructions/VSplitContainer"]
+margin_right = 964.0
+margin_bottom = 29.0
+text = "Engorde seu rikishi (lutador) com bons alimentos e escape dos alimentos ruins."
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Body" type="Label" parent="Instructions/VSplitContainer"]
+margin_top = 228.0
+margin_right = 964.0
+margin_bottom = 353.0
+text = "Comida saudável - Aumenta saúde
+Comida podre - Diminui saúde
+Baiacu - Evite a todos custo
+Rikishi - Irá te empurrar"
+
+[node name="StartBtn" type="Button" parent="Instructions/VSplitContainer"]
+margin_left = 415.0
+margin_top = 449.0
+margin_right = 565.0
+margin_bottom = 491.0
+text = "Começar"
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="pressed" from="Instructions/VSplitContainer/StartBtn" to="." method="_on_StartBtn_pressed"]

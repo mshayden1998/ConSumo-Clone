@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://resources/default_theme.tres" type="Theme" id=1]
+[ext_resource path="res://user_interface/PauseMenu.gd" type="Script" id=2]
+
+[node name="PauseMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -1.5
+margin_right = 1.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResumeBtn" type="Button" parent="HSeparator"]
+margin_left = -94.5
+margin_top = 160.0
+margin_right = 99.5
+margin_bottom = 202.0
+text = "RESUME_BTN"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitBtn" type="Button" parent="HSeparator"]
+margin_left = -78.5
+margin_top = 416.0
+margin_right = 68.5
+margin_bottom = 458.0
+text = "EXIT_BTN"
+
+[connection signal="pressed" from="HSeparator/ResumeBtn" to="." method="_on_ResumeBtn_pressed"]
+[connection signal="pressed" from="HSeparator/ExitBtn" to="." method="_on_ExitBtn_pressed"]

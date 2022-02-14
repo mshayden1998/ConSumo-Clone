@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://art/gf_apple.png" type="Texture" id=1]
+[ext_resource path="res://art/gf_bowl_of_rice.png" type="Texture" id=2]
+[ext_resource path="res://art/sushi.png" type="Texture" id=3]
+[ext_resource path="res://GoodFood.gd" type="Script" id=4]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 23.0868
+
+[node name="GoodFood" type="KinematicBody2D" groups=["good_food"]]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 4 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 1 )
+scale = Vector2( 0.172031, 0.172031 )
+frames = SubResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
