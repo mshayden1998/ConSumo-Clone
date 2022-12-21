@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gf_apple.png-510d4969e41ba7075517d211222f5fef.stex"
+path="res://.import/bg_dojo.png-a5da93bccdc066534cfdda664e7f1ae7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/gf_apple.png"
-dest_files=[ "res://.import/gf_apple.png-510d4969e41ba7075517d211222f5fef.stex" ]
+source_file="res://assets/bg_dojo.png"
+dest_files=[ "res://.import/bg_dojo.png-a5da93bccdc066534cfdda664e7f1ae7.stex" ]
 
 [params]
 

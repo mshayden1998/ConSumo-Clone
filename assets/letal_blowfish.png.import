@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tries_icon.png-1a33213d243bb46ec5e59feed77146c4.stex"
+path="res://.import/letal_blowfish.png-67ea1cf10e42fc50a265ab475eec7164.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/tries_icon.png"
-dest_files=[ "res://.import/tries_icon.png-1a33213d243bb46ec5e59feed77146c4.stex" ]
+source_file="res://assets/letal_blowfish.png"
+dest_files=[ "res://.import/letal_blowfish.png-67ea1cf10e42fc50a265ab475eec7164.stex" ]
 
 [params]
 

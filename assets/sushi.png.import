@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/letal_blowfish.png-91d40b5c1a6898676c7c306abbd49f9a.stex"
+path="res://.import/sushi.png-35e41b5555e8eecbd885240d0b91692a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/letal_blowfish.png"
-dest_files=[ "res://.import/letal_blowfish.png-91d40b5c1a6898676c7c306abbd49f9a.stex" ]
+source_file="res://assets/sushi.png"
+dest_files=[ "res://.import/sushi.png-35e41b5555e8eecbd885240d0b91692a.stex" ]
 
 [params]
 

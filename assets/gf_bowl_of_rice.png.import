@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/player_rikishi.png-399e716695e0957e02ca40f01c6b65c8.stex"
+path="res://.import/gf_bowl_of_rice.png-f4e33d3f292e5602e19d7174e634ab63.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/player_rikishi.png"
-dest_files=[ "res://.import/player_rikishi.png-399e716695e0957e02ca40f01c6b65c8.stex" ]
+source_file="res://assets/gf_bowl_of_rice.png"
+dest_files=[ "res://.import/gf_bowl_of_rice.png-f4e33d3f292e5602e19d7174e634ab63.stex" ]
 
 [params]
 

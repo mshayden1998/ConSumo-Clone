@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pusher_rikishi.png-db88609afce3780eea3fd410e1161eeb.stex"
+path="res://.import/bf_apple.png-c92482e025862a791d8cd6c5a11c2641.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/pusher_rikishi.png"
-dest_files=[ "res://.import/pusher_rikishi.png-db88609afce3780eea3fd410e1161eeb.stex" ]
+source_file="res://assets/bf_apple.png"
+dest_files=[ "res://.import/bf_apple.png-c92482e025862a791d8cd6c5a11c2641.stex" ]
 
 [params]
 

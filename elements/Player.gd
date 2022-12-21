@@ -24,11 +24,3 @@ func get_input():
 func _physics_process(_delta):
 	get_input()
 	velocity = move_and_slide(velocity)
-
-
-func _on_ItemsDetection_body_entered(body):
-	if body.name == "GoodFood":
-		weight += 10
-		body.queue_free()
-	if body.name == "BadFood":
-		weight -= 5

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sushi.png-96967df973c02f1674770e7f4af83bb5.stex"
+path="res://.import/gf_apple.png-eb778bda7914a1692f2d08b9bce764c7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/sushi.png"
-dest_files=[ "res://.import/sushi.png-96967df973c02f1674770e7f4af83bb5.stex" ]
+source_file="res://assets/gf_apple.png"
+dest_files=[ "res://.import/gf_apple.png-eb778bda7914a1692f2d08b9bce764c7.stex" ]
 
 [params]
 

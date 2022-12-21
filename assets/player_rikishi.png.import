@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bg_dojo.png-6518004adae9c1475fc1c556d20e2546.stex"
+path="res://.import/player_rikishi.png-b00b0336cd3d776d6d904d9c2e6cde03.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/bg_dojo.png"
-dest_files=[ "res://.import/bg_dojo.png-6518004adae9c1475fc1c556d20e2546.stex" ]
+source_file="res://assets/player_rikishi.png"
+dest_files=[ "res://.import/player_rikishi.png-b00b0336cd3d776d6d904d9c2e6cde03.stex" ]
 
 [params]
 
