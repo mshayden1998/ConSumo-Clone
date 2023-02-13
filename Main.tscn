@@ -16,9 +16,6 @@ autostart = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="ColorRect" type="ColorRect" parent="Instructions"]
 anchor_right = 1.0
@@ -40,7 +37,7 @@ __meta__ = {
 }
 
 [node name="Header" type="Label" parent="Instructions/VSplitContainer"]
-margin_right = 964.0
+margin_right = 1860.0
 margin_bottom = 29.0
 text = "Engorde seu rikishi (lutador) com bons alimentos e escape dos alimentos ruins."
 align = 1
@@ -50,9 +47,9 @@ __meta__ = {
 }
 
 [node name="Body" type="Label" parent="Instructions/VSplitContainer"]
-margin_top = 228.0
-margin_right = 964.0
-margin_bottom = 353.0
+margin_top = 468.0
+margin_right = 1860.0
+margin_bottom = 593.0
 text = "Comida saudável - Aumenta saúde
 Comida podre - Diminui saúde
 Baiacu - Evite a todos custo

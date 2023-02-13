@@ -17,4 +17,4 @@ func _on_Timer_timeout():
 
 
 func _on_StartBtn_pressed():
-	pass
+	$Instructions.queue_free()
